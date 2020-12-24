@@ -47,6 +47,7 @@
     'use strict';
 
     const num = 10;
+    int omikuji;
 
 
     for (let i = 0; i < num; i++) {
@@ -55,7 +56,7 @@
         
       
       div.addEventListener('click', () => {
-        const omikuji = Math.floor(Math.random() * num); // 0 - 9
+        omikuji = Math.floor(Math.random() * num); // 0 - 9
         if (i === omikuji) {
           div.textContent = '大吉!';
           div.classList.add('大吉');
