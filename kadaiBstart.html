@@ -40,28 +40,24 @@
       const div = document.createElement('div');
       div.classList.add('box');
       
-
-      
-      div.addEventListener('click', () => {
         
-       switch(omikuji){
-        case 0:
+　　　div.addEventListener('click', () => {
+        if (omikuji === 0) {
           div.textContent = '大吉!';
           div.classList.add('大吉');
-          break;
-        case 1:
+        }
+    　　 if (omikuji === 1) {
           div.textContent = '中吉!';
           div.classList.add('中吉');
-          break;
-        case 2:
+        }
+        if (omikuji === 2) {
           div.textContent = '小吉!';
           div.classList.add('小吉');
-          break;
-        case 3:
+        }
+    　　 if (omikuji === 3) {
           div.textContent = '凶!';
           div.classList.add('凶');
-          break;
-      }
+        }
       });
 
       document.body.appendChild(div);
